@@ -1,0 +1,54 @@
+---
+whiskers:
+    version: ^2.5.1
+    matrix:
+    - flavor
+    filename: "themes/catppuccin-{{flavor.identifier}}.json"
+    hex_format: "{{r}}{{g}}{{b}}"
+---
+[theme-colors]
+bg-color = "{{ base.hex }}"
+border-color = "{{ overlay2.hex }}"
+text-color = "{{ text.hex }}"
+tab-text-color = "{{ text.hex }}"
+hops-table-header-bg-color = "{{ surface0.hex }}"
+hops-table-header-text-color = "{{ subtext1.hex }}"
+hops-table-row-active-bg-color = "{{ surface1.hex }}"
+hops-table-row-active-text-color = "{{ text.hex }}"
+hops-table-row-inactive-text-color = "{{ text.hex }}"
+{%- if flavor.light %}
+{#- on a light background, we need a big contrast,
+    because the dots are very small #}
+hops-chart-selected-color = "000000"
+{%- else %}
+hops-chart-selected-color = "{{ green.hex }}"
+{%- endif %}
+hops-chart-unselected-color = "{{ overlay1.hex }}"
+hops-chart-axis-color = "{{ overlay0.hex }}"
+frequency-chart-bar-color = "{{ sky.hex }}"
+frequency-chart-text-color = "{{ base.hex }}"
+flows-chart-bar-selected-color = "{{ green.hex }}"
+flows-chart-bar-unselected-color = "{{ overlay1.hex }}"
+flows-chart-text-current-color = "{{ green.hex }}"
+flows-chart-text-non-current-color = "{{ text.hex }}"
+samples-chart-color = "{{ green.hex }}"
+samples-chart-lost-color = "{{ red.hex }}"
+help-dialog-bg-color = "{{ mantle.hex }}"
+help-dialog-text-color = "{{ text.hex }}"
+settings-dialog-bg-color = "{{ mantle.hex }}"
+settings-tab-text-color = "{{ text.hex }}"
+settings-table-header-text-color = "{{ subtext1.hex }}"
+settings-table-header-bg-color = "{{ surface0.hex }}"
+settings-table-row-text-color = "{{ text.hex }}"
+{%- if flavor.light %}
+map-world-color = "{{ subtext1.hex }}"
+{%- else %}
+map-world-color = "{{ overlay2.hex }}"
+{%- endif %}
+map-radius-color = "{{ peach.hex }}"
+map-selected-color = "{{ green.hex }}"
+map-info-panel-border-color = "{{ overlay2.hex }}"
+map-info-panel-bg-color = "{{ base.hex }}"
+map-info-panel-text-color = "{{ text.hex }}"
+info-bar-bg-color = "{{ surface0.hex }}"
+info-bar-text-color = "{{ subtext1.hex }}"
