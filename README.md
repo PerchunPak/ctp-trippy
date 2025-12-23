@@ -15,6 +15,10 @@
 	<img src="./assets/preview.webp"/>
 </p>
 
+> [!WARNING]
+> This depends on https://github.com/fujiapple852/trippy/pull/1718, so only
+> current dev version can be used. I suggest you use [my patched version](https://github.com/PerchunPak/trippy/tree/patched).
+
 ## Previews
 
 <details>
