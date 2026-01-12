@@ -3,7 +3,7 @@ whiskers:
     version: ^2.5.1
     matrix:
     - flavor
-    filename: "themes/catppuccin-{{flavor.identifier}}.json"
+    filename: "themes/catppuccin-{{flavor.identifier}}.toml"
     hex_format: "{{r}}{{g}}{{b}}"
 ---
 [theme-colors]
@@ -13,9 +13,10 @@ text-color = "{{ text.hex }}"
 tab-text-color = "{{ text.hex }}"
 hops-table-header-bg-color = "{{ surface0.hex }}"
 hops-table-header-text-color = "{{ subtext1.hex }}"
-hops-table-row-active-bg-color = "{{ surface1.hex }}"
-hops-table-row-active-text-color = "{{ text.hex }}"
+hops-table-row-active-text-color = "{{ subtext1.hex }}"
 hops-table-row-inactive-text-color = "{{ text.hex }}"
+hops-table-row-selected-bg-color = "{{ surface1.hex }}"
+hops-table-row-selected-text-color = "{{ text.hex }}"
 {%- if flavor.light %}
 {#- on a light background, we need a big contrast,
     because the dots are very small #}
