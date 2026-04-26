@@ -1,3 +1,7 @@
+> [!NOTE]
+> Trippy has a [WIP PR](https://github.com/fujiapple852/trippy/pull/1780) that adds native support for named themes.
+> This project is now obsolete, since the theme soon will be merged upstream.
+
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
